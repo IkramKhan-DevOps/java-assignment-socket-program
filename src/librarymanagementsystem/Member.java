@@ -17,13 +17,37 @@ public class Member {
     public String address;
     public String contactNo;
 
-    public void add(int id, String name, String fatherName, String address, String contactNo) {
+    public void add(){
+        Scanner sc =  new Scanner(System.in);
         
+        //USER_INPUTS --------------------------------------------------------
+        System.out.println();
+        
+        System.out.print("Enter member ID: ");
+        String memberId = sc.next();
+        
+        System.out.print("Enter member Name: ");
+        String memberName = sc.next();
+        
+        System.out.print("Enter member Fathername: ");
+        String memberFathername = sc.next();
+        
+        System.out.print("Enter member Address: ");
+        String memberAddress = sc.next();
+        
+        System.out.print("Enter member Contact: ");
+        String memberContact = sc.next();
+        
+        //WRITING_TO_FILE ----------------------------------------------------
         try(FileWriter fileWriter = new FileWriter("member.txt", true)){
             try (BufferedWriter bufferWriter = new BufferedWriter(fileWriter)) {
                 
-                bufferWriter.write(id+","+name+","+fatherName+","+address+","+contactNo);
+                bufferWriter.write(
+                        memberId+","+memberName+","+memberFathername+","+
+                        memberAddress+","+memberAddress+","+memberContact
+                );
                 bufferWriter.newLine();
+                System.out.println("Member Information has been stored Successfully.");
                 
             } catch (IOException ex) {
                 ex.printStackTrace();

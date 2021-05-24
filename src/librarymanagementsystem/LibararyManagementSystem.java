@@ -34,7 +34,7 @@ public class LibararyManagementSystem {
                     break;
                     
                 case 3:
-                    member.add(1, "Shiza", "Kabir", "Mansehra", "03419382222");
+                    member.add();
                     break;
                     
                 case 4:
@@ -51,7 +51,8 @@ public class LibararyManagementSystem {
                     
                     
                 case 7:
-                    System.out.println("System will exit");
+                    System.out.println("Terminating application");
+                    break;
                     
                     
                 default:
@@ -67,7 +68,7 @@ public class LibararyManagementSystem {
     
     public void greetingMessage(){
         System.out.println("____________WELCOME_________________");
-        System.out.println("__EXARTH LIBRARY MANAGEMENT SYSTEM__");
+        System.out.println("___ALI LIBRARY MANAGEMENT SYSTEM____");
         System.out.println("____________________________________");
         System.err.println("\n");
     }

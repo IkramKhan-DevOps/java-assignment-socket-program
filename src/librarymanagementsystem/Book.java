@@ -49,7 +49,7 @@ public class Book {
                 
                 bufferWriter.write(
                         bookId+","+bookName+","+bookEdition+","+
-                        bookPrice+","+bookPages
+                        bookPrice+","+bookPages+","+String.valueOf(false)
                 );
                 bufferWriter.newLine();
                 System.out.println("Book Inormation has been stored Successfully.");
