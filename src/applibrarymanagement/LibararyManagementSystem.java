@@ -1,4 +1,4 @@
-package librarymanagementsystem;
+package applibrarymanagement;
 
 
 import java.util.Scanner;
